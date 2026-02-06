@@ -13,21 +13,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building project...'
-                sh 'echo Build successful'
+                bat 'echo Build successful'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'echo Tests passed'
+                bat 'echo Tests passed'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying project...'
-                sh 'echo Deployment completed'
+                bat 'echo Deployment completed'
             }
         }
     }
